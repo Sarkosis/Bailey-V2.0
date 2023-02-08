@@ -17,10 +17,10 @@ const config = {
     ticketlimit: 1,
   },
   database: {
-		host: 'dev.c9ajfzgmntyu.us-east-1.rds.amazonaws.com',
-		user: 'admin',
-		password: 'EVjAjVuaHVmXvbQlxxUA',
-    name: "project-bailey", // The mysql ban database
+    host: "localhost", // Database host
+    user: "root", // Database user
+    password: "", // Database password
+    name: "negnbot", // The mysql ban database
   },
   modules: {
     tickets: true, // Should the tickets module be enabled?

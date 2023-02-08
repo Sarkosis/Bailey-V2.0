@@ -26,7 +26,7 @@ module.exports = {
       ],
     });
     client.user.setStatus(client.config.stats.status);
-    figlet("Project Bailey", function (err, data) {
+    figlet("New Era Gaming Network", function (err, data) {
       if (err) throw err;
       console.log(chalk.blue.dim(data));
     });
