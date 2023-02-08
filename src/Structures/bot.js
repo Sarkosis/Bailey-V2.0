@@ -3,8 +3,8 @@ const fs = require("fs");
 const mysql = require("mysql");
 const chalk = require("chalk");
 const { Player } = require("discord-player");
-const { SarkClient } = require("./sarkClient");
-const client = new SarkClient({
+const { BaileyClient } = require("./BaileyClient");
+const client = new BaileyClient({
   intents: [
     GatewayIntentBits.Guilds,
     GatewayIntentBits.GuildMessages,
@@ -19,7 +19,7 @@ const client = new SarkClient({
     Partials.Channel,
     Partials.User,
   ],
-});
+}); 
 
 // Handlers
 

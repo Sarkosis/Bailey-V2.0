@@ -15,7 +15,11 @@ module.exports = (client) => {
         const command = require(`../../commands/${folder}/${file}`);
         commands.set(command.data.name, command);
         commandArray.push(command.data.toJSON());
+        // console.log(command.data.name);
       }
+      const toFindDuplicates = commandArray => commandArray.filter((item, index) => commandArray.indexOf(item) !== index)
+      const duplicateElements = toFindDuplicates(commandArray);
+      console.log(duplicateElements);
     }
     const rest = new REST({ version: "9" }).setToken(client.config.bot.token);
     try {

@@ -16,7 +16,6 @@ module.exports = {
           sub
             .setName("channel")
             .setDescription("Rate limit a channel")
-            .addNumberOption
             .addChannelOption((option) =>
               option
                 .setName("channel")

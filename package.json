@@ -1,10 +1,10 @@
 {
-  "name": "sql-ticket-bot",
+  "name": "project-bailey",
   "version": "1.0.0",
   "description": "Ticket bot using a MySQL database.",
   "main": "src/Structures/bot.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node src/Structures/bot.js"
   },
   "keywords": [],
   "author": "Created by Sarkosis#3052 for Sheepdog Development",
