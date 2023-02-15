@@ -1,13 +1,13 @@
 {
-  "name": "sql-ticket-bot",
+  "name": "project-bailey",
   "version": "1.0.0",
-  "description": "Ticket bot using a MySQL database.",
+  "description": "Multi-purpose discord bot using a MySQL database.",
   "main": "src/Structures/bot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Created by Sarkosis#3052 for Sheepdog Development",
+  "author": "Created by Sarkosis#3052 and Mr.Gamer#2222",
   "license": "ISC",
   "dependencies": {
     "@discordjs/opus": "^0.8.0",
@@ -24,5 +24,8 @@
     "figlet": "^1.5.2",
     "ms": "^2.1.3",
     "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.34.0"
   }
 }
