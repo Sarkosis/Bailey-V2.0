@@ -26,6 +26,30 @@ CREATE TABLE IF NOT EXISTS giveawayentries(
     MessageID VARCHAR(255),
     UserID VARCHAR(255)
 );
+CREATE TABLE IF NOT EXISTS ticketsettings(
+    GuildID VARCHAR(255) PRIMARY KEY,
+    TranscriptChannel VARCHAR(255),
+    Category VARCHAR(255),
+    StaffRole VARCHAR(255)
+);
+CREATE TABLE IF NOT EXISTS panels(
+    GuildID VARCHAR(255),
+    TicketName VARCHAR(255),
+    TicketDescription TEXT
+);
+CREATE TABLE IF NOT EXISTS ticketdata(
+    GuildID VARCHAR(255),
+    OpenMember VARCHAR(255),
+    CloseMember VARCHAR(255),
+    CreatedTimestamp VARCHAR(255),
+    ClosedTimeStamp VARCHAR(255),
+    TicketType VARCHAR(255),
+    Locked BOOLEAN,
+    Closed BOOLEAN,
+    ChannelID VARCHAR(255),
+    TicketID INT NOT NULL AUTO_INCREMENT,
+    PRIMARY KEY (TicketID)
+);
 CREATE TABLE IF NOT EXISTS guildlogging(
     GuildID VARCHAR(255),
     ModLogs VARCHAR(255),
@@ -99,48 +123,4 @@ CREATE TABLE IF NOT EXISTS rates(
     StaffID VARCHAR(255),
     ChannelID VARCHAR(255),
     Reason VARCHAR(255)
-);
-CREATE TABLE IF NOT EXISTS btnpanels(
-    GuildID TEXT,
-    PanelID INT,
-    LogChannelID TEXT,
-    CategoryID TEXT,
-    Title TEXT,
-    Description TEXT
-);
-CREATE TABLE IF NOT EXISTS btnroles(
-    GuildID TEXT,
-    PanelID INT,
-    RoleID TEXT
-);
-CREATE TABLE IF NOT EXISTS drppanels(
-    GuildID TEXT,
-    PanelID INT,
-    LogChannelID TEXT,
-    CategoryID TEXT
-);
-CREATE TABLE IF NOT EXISTS drptickets(
-    GuildID TEXT,
-    PanelID INT,
-    TicketID INT,
-    Name TEXT,
-    Description TEXT
-);
-CREATE TABLE IF NOT EXISTS drproles(
-    GuildID TEXT,
-    PanelID INT,
-    RoleID TEXT
-);
-CREATE TABLE IF NOT EXISTS logs(
-    GuildID TEXT,
-    PanelID INT,
-    PanelType TEXT,
-    OpeningMemberID TEXT,
-    ClosingMemberID TEXT,
-    ClaimingMemberID TEXT,
-    ChannelID TEXT,
-    Locked TEXT,
-    Closed TEXT,
-    TicketID INT,
-    Archived TEXT
 );
