@@ -1,5 +1,5 @@
-CREATE DATABASE negnbot;
-USE negnbot;
+CREATE DATABASE project-bailey;
+USE project-bailey;
 CREATE TABLE IF NOT EXISTS stickymessages(
     GuildID VARCHAR(255),
     ChannelID VARCHAR(255),
