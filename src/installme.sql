@@ -16,6 +16,7 @@ CREATE TABLE IF NOT EXISTS giveaways(
     GDescription VARCHAR(255),
     WinnerCount INT,
     Active VARCHAR(255),
+    
     Entries INT,
     PRIMARY KEY (GiveawayID)
 );
